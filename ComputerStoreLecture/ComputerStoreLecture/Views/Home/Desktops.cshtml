@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Desktops";
+}
+
+<h1>Desktops</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>RAM</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Desktop rig in Model)
+            {
+                <tr>
+                    <td>@rig.Name</td>
+                    <td>@rig.Price</td>
+                    <td>@rig.RAM</td>
+                </tr>
+            }
+    </tbody>
+
+</table>
+

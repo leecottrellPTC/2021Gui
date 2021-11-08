@@ -1,0 +1,15 @@
+﻿@model ComputerStoreLecture.Models.OrderItem;
+@{
+    ViewData["Title"] = "Thanks";
+}
+
+<h1>Thanks for your order</h1>
+<p>You ordered a computer. The price and specs will be emailed to @Model.Email</p>
+
+<h2>Specifications</h2>
+<ul>
+    <li>Processor = @Model.Processor</li>
+    <li>Speed = @Model.Speed Ghz </li>
+    <li>RAM = @Model.RAM GB</li>
+    <li>Hard Drive = @Model.HDSize TB</li>
+</ul>

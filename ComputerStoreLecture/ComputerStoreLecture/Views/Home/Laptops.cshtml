@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Laptops";
+}
+
+<h1>Laptops</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>RAM</th>
+            <th>Screen</th>
+            <th>Weight</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Laptop rig in Model)
+        {
+            <tr>
+                <td>@rig.Name</td>
+                <td>@rig.Price</td>
+                <td>@rig.RAM</td>
+                <td>@rig.Screen</td>
+                <td>@rig.Weight</td>
+            </tr>
+        }
+    </tbody>
+
