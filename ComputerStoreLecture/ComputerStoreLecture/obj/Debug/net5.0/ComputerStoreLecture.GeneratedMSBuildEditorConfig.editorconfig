@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = ComputerStoreLecture
-build_property.ProjectDir = C:\Users\lee_c\source\ASP 2021\ComputerStoreLecture\ComputerStoreLecture\
+build_property.ProjectDir = C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\
