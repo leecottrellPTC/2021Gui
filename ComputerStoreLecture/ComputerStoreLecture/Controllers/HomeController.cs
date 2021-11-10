@@ -32,15 +32,18 @@ namespace ComputerStoreLecture.Controllers
         [HttpPost]
         public IActionResult Order(OrderItem theOrder)
         {
-            //write to database before calling thanks
-            return View("Thanks", theOrder);
+            if (ModelState.IsValid)
+            {
+                //write to the database, check inventory...
+                return View("Thanks", theOrder);
+            }
+            else
+            {
+                return View(theOrder);
+            }
         }
 
-        [HttpPost]
-        public IActionResult JoeBOb(OrderItem theOrder)
-        {
-            return View("Thanks", theOrder);
-        }
+       
 
         public IActionResult Desktops()
         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l0ROib/RZ2FF7arYlR+eDDtFULrPlZ/3YaqAmH78OHCMWraKPmvgDb6l5PLsa3DOAFl2gHFp0eF5mHdEI2yLfw==",
+  "dgSpecHash": "1hrs5WyX7yZPPCMt+GuMnflAEiZpSWpiKtZdTQGiwDg/it6bLFc+/WQ9W7UV+Sw65VW6tudeXATyohHtbmVoNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lee_c\\source\\ASP 2021\\ComputerStoreLecture\\ComputerStoreLecture\\ComputerStoreLecture.csproj",
+  "projectFilePath": "C:\\Users\\lee_c\\source\\GUI 2021\\!Current Computer Store Lecture\\ComputerStoreLecture\\ComputerStoreLecture\\ComputerStoreLecture.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lee_c\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\lee_c\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
