@@ -9,12 +9,27 @@
 </head>
 <body>
     <header>
-        @Html.Partial("_menu")
+       @Html.Partial("_menu")
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        <div class="row">
+            <img src="http://placekitten.com/1600/200" class="img-fluid"/>
+        </div>
+        <div class="row">
+
+            <div class="col-md-2">
+                <img src="http://placekitten.com/200/800" class="img-fluid"/>
+            </div>
+
+            <div class="col-md-8">
+                @RenderBody()
+            </div>
+
+            <div class="col-md-2">
+                <img src="http://placekitten.com/200/800" class="img-fluid"/>
+            </div>
+
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">

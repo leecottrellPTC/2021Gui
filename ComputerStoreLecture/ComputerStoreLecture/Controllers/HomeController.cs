@@ -24,6 +24,11 @@ namespace ComputerStoreLecture.Controllers
         }
 
 
+        public IActionResult TheAds()
+        {
+            return View();
+        }
+
         public IActionResult Order()
         {
             return View();
