@@ -1,9 +1,11 @@
+using ComputerStoreLecture.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,15 @@ namespace ComputerStoreLecture
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            Action<ComputerStoreLecture.Models.SiteData> globalData = (opt =>
+            {
+                //set these values, optional
+                //allows hiding of the values
+                opt.tax = (Decimal)0.5;
+            });
+            services.Configure(globalData);
+            services.AddSingleton(resolver => 
+                resolver.GetRequiredService<IOptions<SiteData>>().Value);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +62,9 @@ namespace ComputerStoreLecture
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "Laptops",
+                    pattern: "Home/Laptops/{id:int=-1}");
             });
         }
     }

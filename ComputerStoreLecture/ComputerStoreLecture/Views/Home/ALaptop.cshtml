@@ -1,0 +1,50 @@
+﻿@model ComputerStoreLecture.Models.Laptop
+
+@{
+    ViewData["Title"] = "ALaptop";
+    SiteData globals = new SiteData();
+}
+
+<h1>ALaptop</h1>
+<h3>Setup costs for laptops are @globals.setup</h3>
+<p>We offer 24x7 support. For help reach out to @globals.email</p>
+
+<div>
+    <h4>Laptop</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Screen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Screen)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @*//@Html.DisplayFor(model => model.Price * globals.tax)*@
+            @($"{(Model.Price * (1 + globals.tax)):C2}")
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RAM)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RAM)
+        </dd>
+    </dl>
+</div>
+

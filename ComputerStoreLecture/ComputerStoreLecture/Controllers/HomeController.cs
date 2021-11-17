@@ -59,13 +59,25 @@ namespace ComputerStoreLecture.Controllers
             return View(new Desktop[] { gaming, office, home });
         }
 
-        public IActionResult Laptops()
+        [Route("Laptops/{id:int=-1}")]
+        public IActionResult Laptops(int id)
         {
-            Laptop[] list = {new("Surface Pro", (Decimal) 1700.50, 8, 19, 6),
-                new("iPad", 1000, 8, 8, 2),
-                new("Dell Latitude", 1100, 16, 15, 8)
+            Laptop[] list = {new("Surface Pro 🤣", (Decimal) 1700.50, 8, 19, 6 ),
+                new("iPad 💔", 1000, 8, 8, 2 ),
+                new("Dell Latitude", 1100, 16, 15, 8 )
             };
-            return View(list);
+            if(id == -1 )//|| id >= list.Length)
+            {
+                return View(list);
+            }
+            else if (id >= list.Length)
+            {
+                return View("ALaptop", new Laptop("No Laptop", 0,0,0,0));
+            }
+            else
+            {
+                return View("ALaptop", list[id]);
+            }
         }
 
         public IActionResult Privacy()
