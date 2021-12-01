@@ -26,7 +26,7 @@ namespace HenryBooksEF
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            var conn = @"your connection string here";
+            var conn = @"Your Connection String Goes Here";
             services.AddDbContext<cottrell2021Context>(options => options.UseSqlServer(conn));
         }
 

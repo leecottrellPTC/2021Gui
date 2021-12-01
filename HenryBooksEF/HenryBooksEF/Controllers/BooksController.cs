@@ -19,11 +19,42 @@ namespace HenryBooksEF.Controllers
         }
 
         // GET: Books
-        public async Task<IActionResult> Index()
+        /* public async Task<IActionResult> Index()
+         {
+             var cottrell2021Context = _context.Books.Include(b => b.PublisherCodeNavigation);
+            // var cottrell2021Context = _context.Books.Where(b => b.Type.Equals("FIC")).Include(b => b.PublisherCodeNavigation);
+             return View(await cottrell2021Context.ToListAsync());
+         }
+        */
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-            var cottrell2021Context = _context.Books.Include(b => b.PublisherCodeNavigation);
-            return View(await cottrell2021Context.ToListAsync());
+            var books = from b in _context.Books
+                        select b;
+
+            ViewData["TitleSortParam"] = String.IsNullOrEmpty(sortOrder) ? "title_sort" : "";//default
+            ViewData["TypeSortParam"] = sortOrder == "Type" ? "type_sort" : "type_sort";
+            ViewData["CurrentFilter"] = searchString;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                books = books.Where(b => b.Title.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "type_sort":
+                    books = books.OrderBy(b => b.Type);
+                    break;
+
+                case "title_sort":
+                default:
+                    books = books.OrderBy(b => b.Title);
+                    break;
+            }
+
+            return View(await books.AsNoTracking().ToListAsync());
         }
+
 
         // GET: Books/Details/5
         public async Task<IActionResult> Details(string id)
