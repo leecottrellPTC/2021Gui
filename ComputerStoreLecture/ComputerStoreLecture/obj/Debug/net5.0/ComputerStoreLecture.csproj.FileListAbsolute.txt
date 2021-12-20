@@ -1606,7 +1606,6 @@ C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture
 C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\ComputerStoreLecture.RazorAssemblyInfo.cache
 C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\ComputerStoreLecture.RazorAssemblyInfo.cs
 C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\staticwebassets\ComputerStoreLecture.StaticWebAssets.Manifest.cache
-C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\staticwebassets\ComputerStoreLecture.StaticWebAssets.xml
 C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\scopedcss\bundle\ComputerStoreLecture.styles.css
 C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\ComputerStoreLecture.TagHelpers.input.cache
 C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\ComputerStoreLecture.TagHelpers.output.cache
@@ -2049,3 +2048,4 @@ D:\source\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\Com
 D:\source\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\ref\ComputerStoreLecture.dll
 D:\source\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\ComputerStoreLecture.pdb
 D:\source\2021Gui\ComputerStoreLecture\ComputerStoreLecture\obj\Debug\net5.0\ComputerStoreLecture.genruntimeconfig.cache
+C:\Users\lee_c\source\GUI 2021\2021Gui\ComputerStoreLecture\ComputerStoreLecture\bin\Debug\net5.0\ComputerStoreLecture.StaticWebAssets.xml

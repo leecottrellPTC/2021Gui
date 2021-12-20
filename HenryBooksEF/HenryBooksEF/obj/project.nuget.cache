@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zGvSer7IHdNrYJ3Ek5eVrFRoXVu2K0a/xTWPQ+KwhS7McWmd+3KSn75XcvPOPK8opQZBf2KbmZLckXqk+/dvWw==",
+  "dgSpecHash": "sHSDd79n5xRKCgEmaDUw8wG9B4uBCIs+n+20n0cLOcivEa/r0TMY6EWiYe8MmLmnu4xYJtqtQQNXKe9TBOhdrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\lee_c\\source\\GUI 2021\\2021Gui\\HenryBooksEF\\HenryBooksEF\\HenryBooksEF.csproj",
   "expectedPackageFiles": [
@@ -130,7 +130,8 @@
     "C:\\Users\\lee_c\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\lee_c\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\lee_c\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\lee_c\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\lee_c\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\lee_c\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }

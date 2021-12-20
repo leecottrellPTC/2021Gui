@@ -409,7 +409,6 @@ C:\Users\lee_c\source\GUI 2021\2021Gui\HenryBooksEF\HenryBooksEF\obj\Debug\net5.
 C:\Users\lee_c\source\GUI 2021\2021Gui\HenryBooksEF\HenryBooksEF\obj\Debug\net5.0\HenryBooksEF.RazorAssemblyInfo.cache
 C:\Users\lee_c\source\GUI 2021\2021Gui\HenryBooksEF\HenryBooksEF\obj\Debug\net5.0\HenryBooksEF.RazorAssemblyInfo.cs
 C:\Users\lee_c\source\GUI 2021\2021Gui\HenryBooksEF\HenryBooksEF\obj\Debug\net5.0\staticwebassets\HenryBooksEF.StaticWebAssets.Manifest.cache
-C:\Users\lee_c\source\GUI 2021\2021Gui\HenryBooksEF\HenryBooksEF\obj\Debug\net5.0\staticwebassets\HenryBooksEF.StaticWebAssets.xml
 C:\Users\lee_c\source\GUI 2021\2021Gui\HenryBooksEF\HenryBooksEF\obj\Debug\net5.0\scopedcss\bundle\HenryBooksEF.styles.css
 C:\Users\lee_c\source\GUI 2021\2021Gui\HenryBooksEF\HenryBooksEF\obj\Debug\net5.0\HenryBooksEF.TagHelpers.input.cache
 C:\Users\lee_c\source\GUI 2021\2021Gui\HenryBooksEF\HenryBooksEF\obj\Debug\net5.0\HenryBooksEF.TagHelpers.output.cache

@@ -26,7 +26,7 @@ namespace HenryBooksEF
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            var conn = @"Your Connection String Goes Here";
+            var conn = @"Server=tcp:cottrellsql.database.windows.net,1433;Initial Catalog=cottrell2021;Persist Security Info=False;User ID=cottrell;Password=a,plain3;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             services.AddDbContext<cottrell2021Context>(options => options.UseSqlServer(conn));
         }
 
