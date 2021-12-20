@@ -391,3 +391,4 @@ D:\source\2021Gui\changeTableNamesAuth\changeTableNamesAuth\obj\Debug\net5.0\cha
 D:\source\2021Gui\changeTableNamesAuth\changeTableNamesAuth\obj\Debug\net5.0\ref\changeTableNamesAuth.dll
 D:\source\2021Gui\changeTableNamesAuth\changeTableNamesAuth\obj\Debug\net5.0\changeTableNamesAuth.pdb
 D:\source\2021Gui\changeTableNamesAuth\changeTableNamesAuth\obj\Debug\net5.0\changeTableNamesAuth.genruntimeconfig.cache
+D:\source\2021Gui\changeTableNamesAuth\changeTableNamesAuth\obj\Debug\net5.0\changeTableNamesAuth.csproj.AssemblyReference.cache
