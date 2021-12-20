@@ -1,0 +1,64 @@
+﻿@model IEnumerable<HenryBooksEF.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<form asp-action="Index" method="get">
+    <div class="form-group">
+        Search by partial title:
+        <input type="text" name="SearchString"
+               value="@ViewData["CurrentFilter"]">
+        <input type="submit" value="Search" class="btn btn-default"/>
+        <a asp-action="Index">Back to full list</a>
+    </div>
+</form>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["TitleSortParam"]">
+                @Html.DisplayNameFor(model => model.Title)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["TypeSortParam"]">
+                    @Html.DisplayNameFor(model => model.Type)</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paperback)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublisherCodeNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paperback)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublisherCodeNavigation.PublisherCode)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BookCode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BookCode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BookCode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
