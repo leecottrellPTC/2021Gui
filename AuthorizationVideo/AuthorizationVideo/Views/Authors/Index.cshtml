@@ -1,0 +1,52 @@
+﻿@model IEnumerable<AuthorizationVideo.Models.Author>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+@if (User.IsInRole("Administrators"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AuthorLast)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AuthorFirst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImgPath)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorLast)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorFirst)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImgPath)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AuthorNum">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AuthorNum">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AuthorNum">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
